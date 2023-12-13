@@ -15,6 +15,7 @@ body {
 }
 
 .main-section {
+  width:35%
   height: auto;
   position: relative;
   float: right;
@@ -44,6 +45,7 @@ code{
 
 #navbar {
   height: 100%;
+  weight:20%
   position: fixed;
   display: block;
   float: left;
