@@ -111,9 +111,9 @@ ul li{
 
 @media screen and (max-width: 800px) {
   .main-section {
-    width: 58%; 
+    width: 60%; 
   }
   #navbar {
-    width: 22%;
+    width: 25%;
   }
 }
