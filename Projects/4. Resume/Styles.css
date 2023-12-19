@@ -262,7 +262,7 @@ li {
         line-height: 2.2vh;
     }
     .page {
-        min-height: 134vh; 
+        min-height: 135vh; 
     }
 
     .side-bar {
@@ -288,6 +288,11 @@ li {
 
     .side-bar {
         min-height: 100vh;
+    }
+
+    li {
+        margin-top:6px;
+        margin-bottom: 6px;
     }
   }
 
@@ -319,5 +324,13 @@ li {
     .side-bar-header {
         font-size: 1.4vw;
         letter-spacing: 2px;
+    }
+   .side-bar-list{
+    word-break: break-all;
+   }
+
+   li {
+    margin-top:5px;
+    margin-bottom: 5px;
     }
   }
