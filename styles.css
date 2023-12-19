@@ -77,7 +77,7 @@ h1{
 }
 
 h2{
-    font-size: 2.8vw;
+    font-size: 3.8vw;
     font-family: cursive;
     letter-spacing: 2px;
 }
@@ -103,7 +103,7 @@ h4{
     margin-bottom: 0%;
 }
 
-p{
+p, .top-P{
     font-size: 1.4vw;
     letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
@@ -133,7 +133,7 @@ p{
     width: 65vw;
     height: auto;
     margin-bottom: 5%;
-    margin-left: 20vw;
+    margin-left: 16.5vw;
     background-color: rgb(58, 53, 53);
     border: 2px solid var(--main-color);
     border-radius: 10px;
@@ -158,3 +158,134 @@ iframe{
     margin-bottom: 2%;
     margin-left: 4vw;
 }
+
+@media only screen and (max-width: 1200px) {
+    #info-section{
+        margin-top: 23%;
+    }
+    h1{
+        font-size: 6.5vw;
+    }
+    p, .top-P{
+        font-size: 2vw;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    #info-section{
+        margin-top: 30%;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    .top-P{
+        font-size: 2.5vw;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    #info-section{
+        margin-top: 25%;
+    }
+
+    .backVideo {
+        height: 79vh;
+    }
+
+    h1{
+        font-size: 7.5vw;
+    }
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    .top-P{
+        font-size: 2.8vw;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    #info-section{
+        margin-top: 20%;
+    }
+
+    #welcome-message{
+        margin-top: 20vh;
+    }
+
+    .backVideo {
+        height: 56vh;
+    }
+
+    h1{
+        font-size: 7.7vw;
+    }
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    .top-P{
+        font-size: 2.9vw;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #info-section{
+        margin-top: 16%;
+    }
+
+    #welcome-message{
+        margin-top: 14vh;
+    }
+
+    .backVideo {
+        height: 40vh;
+    }
+
+    h1{
+        font-size: 7.7vw;
+    }
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    .top-P{
+        font-size: 2.9vw;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #info-section{
+        margin-top: 13%;
+    }
+
+    #welcome-message{
+        margin-top: 13vh;
+    }
+
+    .backVideo {
+        height: 34vh;
+    }
+
+    h1{
+        font-size: 7.6vw;
+    }
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    .top-P{
+        font-size: 2.8vw;
+    }
+  }
