@@ -159,37 +159,6 @@ iframe{
     margin-left: 4vw;
 }
 
-@media only screen and (max-width: 1200px) {
-    #info-section{
-        margin-top: 23%;
-    }
-    h1{
-        font-size: 6.5vw;
-    }
-    p, .top-P{
-        font-size: 2vw;
-    }
-  }
-
-
-  @media only screen and (max-width: 1000px) {
-    #info-section{
-        margin-top: 30%;
-    }
-
-    h1{
-        font-size: 7vw;
-    }
-
-    p{
-        font-size: 2.2vw;
-    }
-
-    .top-P{
-        font-size: 2.5vw;
-    }
-  }
-
   @media only screen and (max-width: 800px) {
     #info-section{
         margin-top: 25%;
@@ -210,9 +179,15 @@ iframe{
     .top-P{
         font-size: 2.8vw;
     }
+
+    iframe{
+        width: 54vw;
+        height: 350px;
+        margin-left: 1.8vw;
+    }
   }
 
-    @media only screen and (max-width: 620px) {
+  @media only screen and (max-width: 620px) {
     #info-section{
         margin-top: 20%;
     }
@@ -240,6 +215,11 @@ iframe{
     .info{
         width: 78vw;
         margin-left: 11vw;
+    }
+    iframe{
+        width: 65vw;
+        height: 350px;
+        margin-left: 1.8vw;
     }
     
   }
@@ -273,6 +253,12 @@ iframe{
         width: 80vw;
         margin-left: 10vw;
     }
+
+    iframe{
+        width: 68vw;
+        height: 200px;
+        margin-left: 1.8vw;
+    }
   }
 
   @media only screen and (max-width: 400px) {
@@ -298,5 +284,11 @@ iframe{
 
     .top-P{
         font-size: 2.8vw;
+    }
+
+    iframe{
+        width: 68vw;
+        height: 180px;
+        margin-left: 1.8vw;
     }
   }
