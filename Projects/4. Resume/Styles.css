@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
-    margin: 2;
-    padding: 0;
+    margin: 4;
+    padding: 1;
 }
 
 body {
-    margin-top: 6%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     background-image: url("Images/istockphoto-875792826-612x612.jpg");
     background-size:cover;
     background-repeat: no-repeat;
@@ -14,7 +15,7 @@ body {
 .page {
     width: 75%;
     margin-left: 10%;
-    min-height: 264vh; 
+    min-height: 236vh; 
     position: absolute;
     background-color: white;
     box-shadow: 6px 10px 28px 6px rgba(10, 10, 10, 0.4);
@@ -41,7 +42,7 @@ h1 {
     margin-left: 2%;
     width: 20vw;
     max-height: 200vh;
-    min-height: 238vh;
+    min-height: 230vh;
     background-color: #ffcccc;
     padding: 8% 2% 2%;
 }
@@ -150,6 +151,173 @@ li {
 }
 
 /* Media query for smaller screens (e.g., mobile) */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
+    .page {
+        min-height: 218vh; 
+    }
+
+    .side-bar {
+        min-height: 205vh;}
+  }
+
+
+  @media only screen and (max-width: 1340px) {
+    .name-bar {
+        height: 28vh;
+        padding: 1%;
+    }
+
+    h1{
+        font-size: 4.7vw;
+    }
+
+    .side-bar {
+        padding: 6% 2% 2%;
+    }
+
+    .page {
+        min-height: 197vh; 
+    }
+
+    .side-bar {
+        min-height: 180vh;}
+  }
+
+  @media screen and (max-width: 1200px) {
+    .name-bar {
+        height: 24vh;
+        padding: 1%;
+    }
+
+    h1{
+        font-size: 4.5vw;
+    }
+
+    .page {
+        min-height: 184vh; 
+    }
+
+    .picture {
+        height: 18vh;
+    }
+
+    .side-bar 
+    {
+        min-height: 165vh;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
     body{background-repeat: repeat;}
+
+    .name-bar {
+        height: 20vh;
+        padding: 1%;
+    }
+
+    h1{
+        font-size: 4.4vw;
+    }
+
+    .picture {
+        height: 20vh;
+    }
+
+    .IntroParagraph {
+        line-height: 3vh;
+    }
+
+    .page {
+        min-height: 160vh; 
+    }
+    .side-bar {
+        min-height: 148vh;
+        padding: 3% 2% 2%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .IntroParagraph {
+        line-height: 2.4vh;
+    }
+    .page {
+        min-height: 144vh; 
+    }
+
+    .side-bar {
+        min-height: 136vh;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .name-bar {
+        height: 18vh;
+    }
+
+    .picture {
+        height: 17vh;
+    }
+
+    .IntroParagraph {
+        line-height: 2.2vh;
+    }
+    .page {
+        min-height: 134vh; 
+    }
+
+    .side-bar {
+        min-height: 124vh;
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    .name-bar {
+        height: 16vh;
+    }
+
+    .picture {
+        height: 15vh;
+    }
+
+    .IntroParagraph {
+        line-height: 2vh;
+    }
+    .page {
+        min-height: 120vh; 
+    }
+
+    .side-bar {
+        min-height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .name-bar {
+        height: 14vh;
+    }
+
+    h1{
+        font-size: 4.2vw;
+    }
+
+    .picture {
+        height: 10vh;
+        width: 94%;
+    }
+
+    .IntroParagraph {
+        line-height: 1.2vh;
+    }
+    .page {
+        min-height: 106vh; 
+    }
+
+    .side-bar {
+        min-height: 90vh;
+    }
+
+    .side-bar-header {
+        font-size: 1.4vw;
+        letter-spacing: 2px;
+    }
   }
