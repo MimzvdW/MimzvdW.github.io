@@ -115,6 +115,13 @@ p, .top-P{
     margin: 16px;
 }
 
+.websiteView{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 0%;
+}
+
 #welcome-message{
     text-align: center;
     margin-top: 30vh;
@@ -133,11 +140,11 @@ p, .top-P{
     width: 65vw;
     height: auto;
     margin-bottom: 5%;
-    margin-left: 16.5vw;
+    margin-left: 18vw;
     background-color: rgb(58, 53, 53);
     border: 2px solid var(--main-color);
     border-radius: 10px;
-    
+    margin-left: 16.5vw;
     padding-left: 4%;
     padding-right: 4%;
     justify-content: center;
@@ -158,6 +165,49 @@ iframe{
     margin-bottom: 2%;
     margin-left: 4vw;
 }
+
+@media only screen and (max-width: 1200px) {
+    #info-section{
+        margin-top: 23%;
+    }
+
+    .info{
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    h1{
+        font-size: 6.5vw;
+    }
+    p, .top-P{
+        font-size: 2vw;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    #info-section{
+        margin-top: 30%;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+
+    p{
+        font-size: 2.2vw;
+    }
+
+    .top-P{
+        font-size: 2.5vw;
+    }
+
+    iframe{
+        width: 54vw;
+        height: 420px;
+        margin-left: 1.8vw;
+    }
+  }
 
   @media only screen and (max-width: 800px) {
     #info-section{
