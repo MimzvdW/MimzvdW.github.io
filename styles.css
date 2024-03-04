@@ -199,8 +199,13 @@ button:hover {
     h1{
         font-size: 6.5vw;
     }
+
+    h2{
+        font-size: 3.8vw;
+    }
+
     p, .top-P{
-        font-size: 2vw;
+        font-size: 1.4vw;
     }
   }
 
@@ -214,8 +219,12 @@ button:hover {
         font-size: 7vw;
     }
 
+    h2{
+        font-size: 3.4vw;
+    }
+
     p{
-        font-size: 2.2vw;
+        font-size: 1.4vw;
     }
 
     .top-P{
@@ -242,8 +251,12 @@ button:hover {
         font-size: 7.5vw;
     }
 
+    h2{
+        font-size: 3.4vw;
+    }
+
     p{
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
 
     .top-P{
@@ -274,8 +287,12 @@ button:hover {
         font-size: 7.7vw;
     }
 
+    h2{
+        font-size: 3.4vw;
+    }
+
     p{
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
 
     .top-P{
@@ -311,8 +328,12 @@ button:hover {
         font-size: 7.7vw;
     }
 
+    h2{
+        font-size: 3.4vw;
+    }
+
     p{
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
 
     .top-P{
@@ -348,8 +369,12 @@ button:hover {
         font-size: 7.6vw;
     }
 
+    h2{
+        font-size: 3.4vw;
+    }
+
     p{
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
 
     .top-P{
