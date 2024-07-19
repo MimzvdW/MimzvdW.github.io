@@ -1,116 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michelle van der Westhuizen Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="welcome-section">
-      <video autoplay muted loop plays-inline class="backVideo">
-        <source src="Videos/145027 (Original).mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div id="welcome-message">
-        <p>Welcome to the website of</p>
-        <h1>Michelle van der Westhuizen</h1>
-        <p>I am studying to become a Software Developer</p>
-      </div>
-    </div>
-    <div id="info-section">
-      <div id="about" class="info">
-        <h2 style="text-align: center;">About me</h2>
-        <p>
-          I am a dedicated and hardworking individual who takes my responsibilities seriously and always strive to do my best. I actively look for challenges to improve myself and enhance my expertise.<br>
-          Currently, I am enrolled in a part-time software development certificate program at CTU. 
-          My current journey in software development, reinforced by my studies at CTU, has equipped me with technical skills in various programming languages and web design. However, I recognize the importance of hands-on experience and mentorship in honing these skills further.
-          I am actively seeking a company that offers a supportive environment, providing opportunities for practical learning and professional development. I am eager to contribute my enthusiasm, dedication, and willingness to learn.
-        </p>
-        <p>
-          For more detailed information, please access my online resume. <a href="Projects/4. Resume/Index.HTML" target="_black">click here</a>
-        </p>
-      </div>
-      <div id="projects" class="info">
-        <div class="projectDiv">
-          <h2 style="text-align: center; border-bottom: 3px solid #390449; padding-bottom: 1%;">Projects</h2>
-          <p style="text-align: center;">To hightlight my capabilities here are a few examples projects I completed.</p>
-          <p>The following video showcases my most significant core web development project. While I'm still learning, I couldn't ensure full responsiveness on all screen sizes, so please enjoy the video.</p>
-          <video plays-inline controls style="width:80%; display: block; margin: auto; ">
-              <source src="Videos/Little Nightmares video.mp4" type="video/mp4">
-          </video>
-          <p class="code">To view the all files with code, <a href="https://github.com/MimzvdW/LittleNightmares/tree/main" target="_black">click here</a></p>
-        </div>
-        <div class="projectDiv">
-          <h3>Python</h3>
-          <h4>COVID-19 support service application</h4>
-          <p>This application offers users a menu-driven interface to access relevant information based on their selection</p>
-          <p class="code">To view the code, <a href="https://github.com/MimzvdW/CovidSupportSystem/blob/main/CovidSupportSystem.py" target="_black">click here</a></p>
-          <h4>Slot machine - You will Always loose</h4>
-          <p>This code is based on a slot machine called the “YOU WILL ALWAYS LOSE”.</p>
-          <p class="code">To view the code, <a href="https://github.com/MimzvdW/YOU-WILL-ALWAYS-LOSE/blob/main/You%20will%20always%20lose.py" target="_black">click here</a></p>
-          <h4>Interactive dictionary</h4>
-          <p>Interactive dictionary with 20 words for the users to search that will provide a definitions or appropriate error messages upon entry</p>
-          <p class="code">To view the code, <a href="https://github.com/MimzvdW/Interactive-dictionary/blob/main/Dictionary.py" target="_black"> click here for python </a> or <a href="https://github.com/MimzvdW/Interactive-dictionary/blob/main/DictionaryIndex.json" target="_black"> here for json</a></p>
-          <h4>Rock-Paper-Scissors</h4>
-          <p>Play Rock-Paper-Scissors against the computer.</p>
-          <p class="code">To view the code, <a href="https://github.com/MimzvdW/Rock-Paper-Scissors/blob/main/RockPaperScissors.py" target="_black">click here</a></p>
-        </div>
-        <div class="projectDiv">
-            <h3>SQL DatabaseS</h3>
-            <p>Below is two databases created using SQL server Management studio.</p>
-            <h4>Olympic Database</h4>
-            <p class="code">To view the code, <a href="https://github.com/MimzvdW/Olympic-Database/blob/main/Olympic.sql" target="_black">click here</a></p>
-            <h4>Coffee Shop Database</h4>
-            <p class="code">To view the code, <a href="https://github.com/MimzvdW/Coffee-Shop-Database/blob/main/CoffeeShopDB.sql" target="_black">click here</a></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelle van der Westhuizen Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!--Google Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <!--Awesome Fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <header>
+    <nav id="navbar">
+      <ul style="float:left;">
+        <a href="#hire-section">Hire Me</a></li>
+      </ul>
+      <ul>
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="Resume/index.html">About Me</a></li>
+        <li class="Project-dropdown"><button class="dropbtn"> Projects <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#Code-Project-section">My Coding Style</a>
+            <a href="#Visual-Projects-section">How I Design</a>
+            <a href="#Team-Section">My Team Skills</a>
           </div>
-          <div class="projectDiv">
-            <h3>Java</h3>
-            <h4>Banking App</h4>
-            <p>The application allows users to manage funds—deposit, withdraw, earn interest based on savings duration and amount.</p>
-            <p class="code">To view the code, <a href="https://github.com/MimzvdW/Banking_App" target="_black">click here</a></p>
-          </div>
-          <div class="projectDiv">
-            <h3>C#</h3>
-            <h4>Housing Affordabilit App</h4>
-            <p>The application assist users in determining affordability for house rent or purchase.</p>
-            <p class="code">To view the code, <a href="https://github.com/MimzvdW/Housing_Afortability/blob/main/Program.cs" target="_black">click here</a></p>
-            <h4>Cities Fun Facts</h4>
-            <p>The application allows the users to search for cities based on specific starting and ending characters. Additionally, I integrated a fun fact feature to display when a city name is searched, adding an element of enjoyment to the user experience.</p>
-            <p class="code">To view the code, <a href="https://github.com/MimzvdW/Cities_Fun_Fact/blob/main/Program.cs" target="_black">click here</a></p>
-          </div>
-      <div class="projectDiv" style="padding-bottom: 2%;"f>
-        <h3>ASP.NET</h3>
-        <p>I provided videos for seamless viewing without any application restrictions showcasing applications developed in ASP.NET using C#.</p>
-        <h4 style="padding-bottom: 2%;">Comic Book Website</h4>
-        <video plays-inline controls style="width:80%; display: block; margin: auto; ">
-          <source src="Videos/Comic Website.mp4" type="video/mp4">
-      </video>
-        <h4 style="padding-bottom: 2%;">WebForms Book database</h4>
-        <video plays-inline controls style="width:80%; display: block; margin: auto; ">
-          <source src="Videos/WebForms.mp4" type="video/mp4">
-      </video>
-      <h4 style="padding-bottom: 2%;">WebForms Bus ticket system</h4>
-      <video plays-inline controls style="width:80%; display: block; margin: auto; ">
-        <source src="Videos/Bus ticket system.mp4" type="video/mp4">
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--Video and welcome text-->
+  <div id="welcome-section">
+    <video autoplay muted loop plays-inline class="backVideo">
+      <source src="Videos/145027 (Original).mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
+    <div id="welcome-message">
+      <p class="top-P">Welcome to the website of</p>
+      <h1>Michelle van der Westhuizen</h1>
+      <p class="top-P">I am studying to become a Software Developer</p>
+    </div>
+  </div>
+
+  <!--About me section-->
+  <section id="About-info">
+    <div class="row">
+      <div class="column-Img">
+        <img class="img-About" src="Images/Me-Black-White-Crop.jpg" alt="Michelle-IMG">
       </div>
-        <h3>freeCodeCamp</h3>
-        <p>In addition to my studies, I have actively sought opportunities to gain practical experience in the field. I have completed freeCodeCamp Responsive Web Design certification.</p>
-        <iframe src="Projects/1. Build a Survey Form/Index.html" title="Survey Form"></iframe>
-        <iframe src="Projects/2. Build a Technical Documentation Page/Index.html" title="Technical Documentation Page"></iframe>
-        <iframe src="Projects/3. Build a Product Landing Page/index.html" title="Product Landing Page"></iframe>
-        <p><a href="https://www.freecodecamp.org/certification/fcc4bfbcd94-e24e-480e-8218-2bd067748497/responsive-web-design" target="_black">Certificate</a></p>
+      <div class="column-Content">
+        <h2 id="nameHeader">I am Michelle van der Westhuizen</h2>
+        <p id="devText">Developer</p>
+        <hr />
+        <p>
+          I am a dedicated and hardworking individual who takes my responsibilities seriously and always strives to do
+          my best.
+          I actively seek challenges to improve myself and enhance my expertise. I completed my NQF Level 4 and 5
+          certifications in Systems Development at CTU
+          and am now enrolled at Richfield to pursue a part-time Bachelor of Science in Information Technology (BSc IT)
+          degree.
+          My journey in software development, reinforced by my studies, has equipped me with technical skills in various
+          programming languages and web design.
+          However, I recognize the importance of hands-on experience and mentorship in further honing these skills. I am
+          actively seeking a company that offers a supportive environment, providing opportunities for practical
+          learning and professional development.
+          I am eager to contribute my enthusiasm, dedication, and willingness to learn.</p>
+        <a href="Resume/index.html" target="_black" id="btn">About Me</a>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!--Code project section-->
+  <section id="Code-Project-section">
+    <h2 style="text-align: center; border-bottom: 3px solid #390449; padding-bottom: 1%;">Code Projects</h2>
+    <p>Explore my projects featuring various applications developed using multiple programming languages.
+      Each project serves as a demonstration of my development skills, with access to the code for detailed inspection
+      if you're interested in exploring the coding aspects.</p>
+    <!--Python-->
+    <div class="code-row">
+      <div class="code-column code-column-python">
+        <div class="Python-logo"></div>
+        <h3>COVID-19 support service application</h3>
+        <p class="column-P">This application offers users a menu-driven interface to access relevant information based
+          on their selection.</p>
+        <a class="code-btn" href="https://github.com/MimzvdW/CovidSupportSystem/blob/main/CovidSupportSystem.py"
+          target="_black">View code</a>
+      </div>
+
+      <div class="code-column code-column-python">
+        <div class="Python-logo"></div>
+        <h3>Slot machine - You will Always loose</h3>
+        <p class="column-P">Created a lottery game application that generates three random numbers (0-9), allows the
+          user to guess three numbers, compares the guesses to the random numbers,
+          and displays the user's guess, the random numbers, and winnings, ensuring correct handling of repeating
+          digits.</p>
+        <a class="code-btn"
+          href="https://github.com/MimzvdW/YOU-WILL-ALWAYS-LOSE/blob/main/You%20will%20always%20lose.py"
+          target="_black">View code</a>
+      </div>
+
+      <div class="code-column code-column-python">
+        <div class="Python-logo"></div>
+        <h3>Interactive dictionary</h3>
+        <p class="column-P">Interactive dictionary with 20 words for the users to search that will provide a definitions
+          or appropriate error messages upon entry.</p>
+        <a class="code-btn" href="https://github.com/MimzvdW/Interactive-dictionary/blob/main/Dictionary.py"
+          target="_black">View code</a>
+      </div>
+
+      <div class="code-column code-column-python">
+        <div class="Python-logo"></div>
+        <h3>Rock-Paper-Scissors</h3>
+        <p class="column-P">Created a rock-paper-scissors game where users play against the computer.</p>
+        <a class="code-btn" href="https://github.com/MimzvdW/Rock-Paper-Scissors/blob/main/RockPaperScissors.py"
+          target="_black">View code</a>
+      </div>
+    </div>
+    <!--SQL-->
+    <div class="code-row">
+      <div class="code-column code-column-SSMS">
+        <div class="SSMS-logo"></div>
+        <h3>Olympic Database</h3>
+        <p class="column-P">Database created with 5 tables, linked by foreign keys, and primary keys are auto-generated.
+          I used three stored procedures for deleting, updating, and selecting records.</p>
+        <a class="code-btn" href="https://github.com/MimzvdW/Olympic-Database/blob/main/Olympic.sql"
+          target="_black">View code</a>
+      </div>
+
+      <div class="code-column code-column-SSMS">
+        <div class="SSMS-logo"></div>
+        <h3>Coffee Shop Database</h3>
+        <p class="column-P">Database created with 3 tables, linked by foreign keys.
+          I calculated the sum, created stored procedures for selecting and updating records.</p>
+        <a class="code-btn" href="https://github.com/MimzvdW/Coffee-Shop-Database/blob/main/CoffeeShopDB.sql"
+          target="_black">View code</a>
+      </div>
+
+      <div class="code-column code-column-Oracle">
+        <div class="Oracle-logo"></div>
+        <h3>CTU Database</h3>
+        <p class="column-P">Designed and developed a comprehensive database for CTU to manage student information,
+          course details, and assessment scores, including customized student reports, email conversion, student
+          classification, and performance queries.
+        </p>
+        <a class="code-btn" href="https://github.com/MimzvdW/CTU_DB/blob/main/CTU_DB.sql" target="_black">View code</a>
+      </div>
+
+      <div class="code-column code-column-Oracle">
+        <div class="Oracle-logo"></div>
+        <h3>Dealership Database</h3>
+        <p class="column-P">
+          Created a dealership database for Nicky Motors, including the dealership database, product and supplier tables
+          with constraints, subqueries for specific data retrieval, views for detailed reporting, and set operators to
+          combine queries.</p>
+        <a class="code-btn" href="https://github.com/MimzvdW/Dealership/blob/main/Dealership.sql" target="_black">View
+          code</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Java and C#-->
+  <div class="code-row">
+    <div class="code-column code-column-Java">
+      <div class="Java-logo"></div>
+      <h3>Banking App</h3>
+      <p class="column-P">The application allows users to manage funds—deposit, withdraw, earn interest based on savings
+        duration and amount.</p>
+      <a class="code-btn" href="https://github.com/MimzvdW/Banking_App" target="_black">View code</a>
+    </div>
+
+    <div class="code-column code-column-Java">
+      <div class="Java-logo"></div>
+      <h3>Product Management System</h3>
+      <p class="column-P">Created a Java console application for a Product Management System using ArrayLists, allowing
+        users to add, edit, remove, and view products. Implemented error handling to manage user input and display
+        appropriate error messages.</p>
+      <a class="code-btn"
+        href="https://github.com/MimzvdW/Product_Management_System/blob/main/Product_Management_System.java"
+        target="_black">View code</a>
+    </div>
+
+    <div class="code-column code-column-C">
+      <div class="C-logo"></div>
+      <h3>Housing Affordabilit App</h3>
+      <p class="column-P">Created a C# application to help users determine housing affordability by inputting financial
+        details and choosing between renting or buying,
+        calculating monthly home loan repayments, and assessing affordability based on gross monthly income and
+        expenditures.</p>
+      <a class="code-btn" href="https://github.com/MimzvdW/Housing_Afortability/blob/main/Program.cs"
+        target="_black">View code</a>
+    </div>
+
+    <div class="code-column code-column-C">
+      <div class="C-logo"></div>
+      <h3>Cities Fun Facts</h3>
+      <p class="column-P">
+        The application allows the users to search for cities based on specific starting and ending characters.
+        Additionally, I integrated a fun fact feature to display when a city name is searched, adding an element of
+        enjoyment to the user experience.</p>
+      <a class="code-btn" href="https://github.com/MimzvdW/Cities_Fun_Fact/blob/main/Program.cs" target="_black">View
+        code</a>
+    </div>
+  </div>
+  </section>
+
+  <!--Visual project section-->
+  <section id="Visual-Projects-section">
+    <h2 style="text-align: center; border-bottom: 3px solid #390449; padding-bottom: 1%;">Visual Projects</h2>
+    <p class="Visual-P">Explore my projects showcasing graphical interfaces, web applications, and webforms that I've
+      developed. Due to
+      potential compatibility issues on different systems, I present these projects via video to accurately showcase
+      their functionality and design.</p>
+    <div class="Visual-row">
+      <!--Java GUI-->
+      <div class="visual-column">
+        <h4>Netbeans - Graphical user interface</h4>
+        <h3>Register and Login</h3>
+        <p class="Visual-P">Registration and login feature, users can create an account. Users can create accounts with
+          validated input to ensure all conditions are met.
+          Upon successful registration, users can log in with verified credentials, receiving appropriate messages based
+          on authentication status.
+        </p>
+        <video class="Projects-video" plays-inline controls>
+          <source src="Videos/GUI - Java - Register_Login.mp4" type="video/mp4">
+        </video>
+        <a class="code-btn" href="https://github.com/MimzvdW/Java_Login-Register_GUI" target="_black">View project
+          files</a>
+        <div style="padding: 2%;"></div>
+        <h3>Task Manager Feature</h3>
+        <p class="Visual-P">Task Manager app that helps users organize tasks efficiently.
+          It uses an SQLite database to store tasks, allowing categorization, marking tasks as complete, searching and
+          viewing by categories. The app supports saving tasks to text files, reading from them, and exporting task data
+          to CSV files.
+        </p>
+        <video class="Projects-video" plays-inline controls>
+          <source src="Videos/Task_Manager_GUI.mp4" type="video/mp4">
+        </video>
+        <a class="code-btn" href="https://github.com/MimzvdW/Task_Manager_GUI" target="_black">View project files</a>
+      </div>
+
+      <!--WebForms-->
+      <div class="visual-column">
+        <h4>ASP.NET - WebForms</h4>
+        <h3>Book database</h3>
+        <p class="Visual-P">Book application where users can register and their details are stored in an ASP.net
+          database upon successful registration.
+          After logging in, users can access a Book form to add, display, search, update, and delete books from the
+          database.</p>
+        <video class="Projects-video" plays-inline controls>
+          <source src="Videos/WebForms.mp4" type="video/mp4">
+        </video>
+        <a class="code-btn" href="https://github.com/MimzvdW/Book_Database" target="_black">View project files</a>
+        <div style="padding: 2%;"></div>
+        <h3>Bus ticket system</h3>
+        <p class="Visual-P">Bus Ticketing System using C# and Windows Forms that interacts with an SQL Server database.
+          The application allows users to book new tickets, edit existing bookings, cancel bookings, and view booked
+          tickets in a DataGrid.</p>
+        <video class="Projects-video" plays-inline controls>
+          <source src="Videos/Bus ticket system.mp4" type="video/mp4">
+        </video>
+        <a class="code-btn" href="https://github.com/MimzvdW/Bus_Ticket_System" target="_black">View project files</a>
+      </div>
+
+      <!--Websites-->
+      <div class="visual-column">
+        <h4>Visual Studio - Web Applications</h4>
+        <h3>NerdRealm Collectibles</h3>
+        <p class="Visual-P">Web application for a start-up organization to facilitate online comic sales.
+          It includes essential features like navigation (Home, Location, Favourites, About Us, Latest News) to help
+          users explore and engage with comic content and business information. </p>
+        <video class="Projects-video" plays-inline controls>
+          <source src="Videos/Comic Website.mp4" type="video/mp4">
+        </video>
+        <a class="code-btn" href="https://github.com/MimzvdW/NerdRealm_Collectibles" target="_black">View project
+          files</a>
+        <div style="padding: 2%;"></div>
+        <h3>Little NightMares information website</h3>
+        <p class="Visual-P">
+          Website to showcase the game "Little Nightmares." The site features captivating media, animations,
+          and detailed information about the game, including its background, features, and rules.
+          It also includes a gallery of images and videos, a contact form, game reviews, and links to online platforms
+          for purchasing the game.</p>
+        <video class="Projects-video" plays-inline controls>
+          <source src="Videos/Little Nightmares video.mp4" type="video/mp4">
+        </video>
+        <a class="code-btn" href="https://github.com/MimzvdW/LittleNightmares/tree/main" target="_black">View project
+          files</a>
+      </div>
+  </section>
+
+  <!--FreeCodeCamp-->
+  <section id="FreeCodeCamp-section">
+    <h2 style="text-align: center; border-bottom: 3px solid #390449; padding-bottom: 1%;">FreeCodeCamp</h2>
+    <p style="margin-bottom: 0%; padding-bottom: 0%;">In addition to my studies, I have actively sought opportunities to
+      gain practical experience in the field. I have
+      completed freeCodeCamp Responsive Web Design certification. <a
+        href="https://www.freecodecamp.org/certification/fcc4bfbcd94-e24e-480e-8218-2bd067748497/responsive-web-design"
+        target="_black">View Certificate</a></p>
+    <div class="FreeCodeCamp-row">
+      <div class="FreeCodeCamp-column">
+        <iframe src="Projects/1. Build a Survey Form/Index.html" title="Survey Form"></iframe>
+        <p class="websiteView"><a href="Projects/1. Build a Survey Form/Index.html" target="_black">View full page</a>
+        </p>
+      </div>
+
+      <div class="FreeCodeCamp-column">
+        <iframe src="Projects/2. Build a Technical Documentation Page/Index.html"
+          title="Technical Documentation Page"></iframe>
+        <p class="websiteView"><a href="Projects/2. Build a Technical Documentation Page/Index.html"
+            target="_black">View full page</a></p>
+      </div>
+
+      <div class="FreeCodeCamp-column">
+        <iframe src="Projects/3. Build a Product Landing Page/index.html" title="Product Landing Page"></iframe>
+        <p class="websiteView"><a href="Projects/3. Build a Product Landing Page/index.html" target="_black">View full
+            page</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Team Work-->
+  <section id="Team-Section">
+    <h2 style="text-align: center; border-bottom: 3px solid #390449; padding:0%; margin: 5px;">Team Work</h2>
+    <div class="row">
+      <div class="Content-column">
+        <p>After completing my NQF5, I took a leadership role in our Work Integrated Learning project, ensuring our web
+          application developed smoothly and everyone met deadlines.
+          I prioritized open communication and collaboration, valuing each team member's input for project coordination.
+          I thrive in teams, switching between leading and supporting roles as needed for our success.
+          I excel independently and adapt well to group dynamics, contributing effectively to our collaborative efforts.
+          The video gives an overview of our project's achievements and features, highlighting our teamwork and
+          dedication to reaching goals together.</p>
+      </div>
+      <div class="Video-column">
+        <video class="WIL-Video" plays-inline controls>
+          <source src="Videos/WIL Project Demonstration.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!--Get in touch-->
+  <section id="hire-section">
+    <h2
+      style="font-family: 'Calisto-MT', serif; font-size: 2.9vw; font-style:normal ;font-weight: 500; letter-spacing: 1px; margin: 0%;">
+      Get in Touch</h2>
+    <a class="Social-Links" href="https://www.linkedin.com/in/michelle-van-der-westhuizen-893992263/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="Social-Links" href="https://www.facebook.com/michellemimi.cawood" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a class="Social-Links" href="mailto:michellevdw2021@gmail.com" target="_blank">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+  </section>
+
+  <!--Back to top-->
+  <a href="#welcome-section" id="top">Back to top</a>
+</body>
+
 </html>

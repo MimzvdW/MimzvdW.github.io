@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey From</title>
+  </head>
+  <body>
+    <div>
+    <h1 id="title">Survey From</h1>
+    <p id="description">Thank you for taking the time to help improve the platform</p>
+    <form id="survey-form">
+      <fieldset class="Group-1">
+        <label id="name-label">Name: <br><input id="name" name="name" type="text" placeholder="Enter your name" required></label><br>
+        <label id="email-label">Email: <br><input id="email" type="email" placeholder="Enter your Email address" required></label><br>
+        <label id="number-label">Age (Optional): <br><input id="number" type="number" placeholder="Age" min="1" max="100"></label><br>
+        </fieldset>
+        <fieldset class="Group-2">
+          <label>What did you like about our product? (Select all that apply)</label><br>
+          <label for="use"><input type="checkbox" id="use" name="use" value="use"> Simplicity to use</label><br>
+          <label for="pricing"><input type="checkbox" id="pricing" name="pricing" value="pricing"> Affordable pricing</label><br>
+          <label for="support"><input type="checkbox" id="support" name="support" value="support"> Available support</label><br>
+          <label for="upgrade"><input type="checkbox" id="upgrade" name="upgrade" value="upgrade"> Regular upgrades</label><br>
+          <label for="guarantee"><input type="checkbox" id="guarantee" name="guarantee" value="guarantee"> Money-back gaurantee</label><br>
+          <label for="other"><input type="checkbox" id="other" name="other" id="other" value="other"> Other</label><br>
+        </fieldset>
+        <fieldset class="Group-3">
+          <label>How would you rate your experience with our product?</label><br>
+          <label for="Vsatisfied"><input type="radio" id="Vsatisfied" name="rate" value="Vsatisfied"> Very satisfied</label><br>
+          <label for="satisfied"><input type="radio" id="satisfied" name="rate" value="satisfied"> Satisfied</label><br>
+          <label for="disatisfied"><input type="radio" id="disatisfied" name="rate" value="disatisfied"> Disatisfied</label><br>
+          <label for="Vdisatisfied"><input type="radio" id="Vdisatisfied" name="rate" value="Vdisatisfied"> Very Disatisfied</label><br>
+        </fieldset>
+        <fieldset class="Group-4">
+          <label>Would you recommend us to a friend?</label><br>
+          <label for="def" ><input id="def" name="recommend" value="def" type="radio"> Definitely</label><br>
+          <label for="maybe" ><input id="maybe" name="recommend" value="maybe" type="radio"> Maybe</label><br>
+          <label for="NotSure" ><input id="NotSure" name="recommend" value="NotSure" type="radio"> Not Sure</label><br>
+        </fieldset>
+        <fieldset class="Group-5">
+        <label for="dropdown">Where did you hear from us?</label><br>
+          <select id="dropdown" name="refer">
+            <option>(Select One)</option>
+            <option>Internet</option>
+            <option>Newspaper</option>
+            <option>Social Media</option>
+            <option>Word-of-Mouth</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+        <fieldset class="Group-6">
+          <label for="comment">Any comments or suggestions?</label><br>
+            <textarea id="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <button id="submit" type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+  </body>
+<html>

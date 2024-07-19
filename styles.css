@@ -1,21 +1,26 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
-    --main-color:#390449;
-    --background-color:rgb(70, 67, 67);
+:root {
+    --main-color: #390449;
+    --background-color: rgb(70, 67, 67);
 }
 
-body{
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
     background-color: var(--background-color);
     overflow-x: hidden;
-    background-image: url("Images/abstract-7690589_1280.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-#navbar{
+/*Navigation bar styling*/
+#navbar {
     background-color: var(--background-color);
     width: 100%;
     position: fixed;
@@ -23,34 +28,87 @@ body{
     top: 0;
     left: 0;
     z-index: 3;
-    flex-direction: row-reverse;
+    border-bottom: 4px solid var(--main-color);
+    display: flex;
+    justify-content: space-between;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 
-#navbar a {
-    justify-content: center;
+#navbar a,
+.dropbtn {
     color: white;
     padding: 10px;
     text-decoration: none;
     font-size: 17px;
-    display: flex;
+    display: block;
     align-items: center;
 }
-  
-#navbar a:hover {
-    background-color: var(--main-color);
+
+#navbar a:hover,
+.dropbtn:hover {
+    background-color: #9583af;
     cursor: pointer;
 }
 
-#welcome-section{
+/*Drop down button*/
+.Project-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+}
+
+.dropbtn {
+    background-color: var(--background-color);
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #9583af;
+}
+
+.Project-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Video en wecome woorde*/
+#welcome-section {
     width: 100%;
+}
+
+.websiteView {
+    font-family: Georgia, serif;
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#welcome-message {
+    text-align: center;
+    margin-top: 30vh;
 }
 
 .backVideo {
@@ -61,100 +119,587 @@ ul{
     height: 95vh;
     z-index: -1;
     object-fit: cover;
-  }
+}
 
-h1, h2, h3, h4, p{
+/* headers and paragraphs*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cormorant', serif;
     color: beige;
+    font-weight: 400;
+    font-style: italic;
 }
 
-h1, h4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h1{
-    font-size: 6vw;
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 7vw;
     letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 400;
 }
 
-h2{
-    font-size: 2.8vw;
-    font-family: cursive;
+h2 {
+    font-size: 3.8vw;
     letter-spacing: 2px;
+    line-height: 1.3;
+    margin-bottom: 1%;
 }
 
-h3{
-    font-size: 2.4vw;
-    font-family: 'Times New Roman', Times, serif;
+h3 {
+    font-size: 1.1vw;
     letter-spacing: 2px;
     text-align: center;
-    padding: 1%;
     background-color: var(--main-color);
     border: 2px solid rgb(177, 182, 187);
-    border-radius: 10px;
+    margin-top: 2%;
+    margin: 0;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-h4{
-    font-size: 1.7vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
+h4 {
+    font-size: 1.6vw;
     letter-spacing: 2px;
-    margin-top: 4%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    line-height: 1.4;
+    width: 95%;
+    border-bottom: 1px solid whitesmoke;
+    text-align: center;
 }
 
-p{
-    font-size: 1.4vw;
+p,
+.top-P {
+    font-family: 'Cormorant', serif;
+    font-size: 1.2vw;
     letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.35;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0%;
+    padding-bottom: 1%;
+    margin: 1%;
 }
 
-.code{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.top-P {
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+.code {
+    font-family: Georgia, serif;
     font-size: 1.3vw;
     margin: 16px;
 }
 
-#welcome-message{
-    text-align: center;
-    margin-top: 30vh;
+p a {
+    color: #c88adf;
 }
 
-#info-section{
-    width: 100%;
-    position: relative;
-    margin-top: 14%;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    z-index: 2;
-}
-
-.info{
-    width: 65vw;
+/*Sabout me section styling*/
+#About-info {
+    width: 90vw;
     height: auto;
-    margin-bottom: 5%;
-    margin-left: 20vw;
+    margin-bottom: 2%;
     background-color: rgb(58, 53, 53);
     border: 2px solid var(--main-color);
     border-radius: 10px;
-    
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+    align-items: center;
+}
+
+#nameHeader {
+    padding: 0;
+    margin: 0%;
+}
+
+#devText {
+    font-size: 1.7vw;
+    letter-spacing: 2px;
+    margin-top: 1%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* This will vertically center the items */
+    flex-wrap: wrap;
+    /* Allows wrapping of columns on smaller screens */
+}
+
+.img-About {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-Img,
+.column-Content {
+    float: left;
+    height: auto;
+    /* Should be removed. Only for demonstration */
+    padding: 1%;
+}
+
+.column-Img {
+    width: 31%;
+    align-items: center;
+}
+
+.column-Content {
+    width: 68%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#btn {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    color: white;
+    padding: 1%;
     padding-left: 4%;
     padding-right: 4%;
-    justify-content: center;
+    border: none;
+    width: 10vw;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: #5e5555;
+    border: 3px solid #715e8a;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column-Img,
+    .column-Content {
+        flex: 100%; /* Each column takes up 100% of the width */
+        max-width: 100%;
+    }
+
+    .img-About {
+        padding-top: 5px;
+    }
+}
+
+/*Code projects*/
+.Code-Project-section {
+    width: 100%;
+}
+
+.code-row {
+    display: flex; /* Use flexbox to arrange columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 1%;
+}
+
+.code-column {
+    width: 25%;
     text-align: justify;
+    padding: 4px;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox to arrange children */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: #7a7777;
+    border: 2px solid var(--background-color);
 }
 
-p a{
-    color: #b089bd;
+.column-P {
+    font-size: 1vw;
+    letter-spacing: 1px;
+    margin-bottom: 1.3rem;
+    line-height: 1.44;
+    font-weight: 300;
 }
 
-.projectDiv{
-    border-bottom: 2px solid #390449;
+.code-btn {
+    font-size: 0.9vw;
+    background-color: #5e5555;
+    border: 3px solid #493d5c;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+    width: 10vw;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
-iframe{
-    width: 50vw;
-    height: 500px;
+.code-btn:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 3px solid #110d13;
+}
+
+/*Python - Logo*/
+.Python-logo {
+    background-image: url('Images/Python-Logo-BW.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 4vh;
+    margin-bottom: 10px;
+}
+
+/* Change logo background when hovering over */
+.code-column-python:hover .Python-logo {
+    background-image: url('Images/Python-Logo-color.png');
+}
+
+/*SQL - Logo*/
+.SSMS-logo {
+    background-image: url('Images/SSMS-Logo-BW.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55%;
+    height: 4vh;
+    margin-bottom: 10px;
+}
+
+.code-column-SSMS:hover .SSMS-logo {
+    background-image: url('Images/SSMS-Logo-Color.png');
+}
+
+/*Oracle - Logo*/
+.Oracle-logo {
+    background-image: url('Images/Oracle-Logo-BW.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55%;
+    height: 4vh;
+    margin-bottom: 10px;
+}
+
+.code-column-Oracle:hover .Oracle-logo {
+    background-image: url('Images/Oracle-Logo-Color.png');
+}
+
+/*Java - Logo*/
+.Java-logo {
+    background-image: url('Images/Java-Logo-BW.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55%;
+    height: 4vh;
+    margin-bottom: 10px;
+    /* Added some margin to separate from the button */
+}
+
+.code-column-Java:hover .Java-logo {
+    background-image: url('Images/Java-Logo-color.png');
+}
+
+/*C# - Logo*/
+.C-logo {
+    background-image: url('Images/C-logo-BW.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55%;
+    height: 4vh;
+    margin-bottom: 10px;
+    /* Added some margin to separate from the button */
+}
+
+.code-column-C:hover .C-logo {
+    background-image: url('Images/C-logo-Color.png');
+}
+
+/*On a small screen they will al be in color*/
+@media (max-width: 800px) {
+    .code-column {
+        width: 50%;
+        margin-bottom: 2%;
+    }
+
+    .Python-logo {
+        background-image: url('Images/Python-Logo-color.png');
+    }
+
+    .SSMS-logo {
+        background-image: url('Images/SSMS-Logo-Color.png');
+    }
+
+    .Oracle-logo {
+        background-image: url('Images/Oracle-Logo-Color.png');
+    }
+
+    .Java-logo {
+        background-image: url('Images/Java-Logo-color.png');
+    }
+
+    .C-logo {
+        background-image: url('Images/C-logo-Color.png');
+    }
+}
+
+/*Visual projects styling*/
+.Visual-Projects-section {
+    width: 100%;
+}
+
+
+.Visual-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 2%; /* Add some space between columns */
     margin-bottom: 2%;
-    margin-left: 4vw;
+    padding: 1%;
+}
+
+.visual-column {
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  /* Distribute space between items */
+    background-color: rgb(58, 53, 53);
+    border: 2px solid rgb(198, 184, 204);
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+}
+
+.visual-column:last-child {
+    margin-right: 2%;
+    /* Add margin to the last column */
+}
+
+.visual-column:hover {
+    transform: scale(1.05);
+    /* Scale up by 5% on hover */
+}
+
+.Visual-P {
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+    margin-bottom: 1.1rem;
+    line-height: 1.20;
+}
+
+.Projects-video {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 4px solid whitesmoke;
+    margin-bottom: 3%;
+}
+
+/*FreeCodeCamp styling*/
+.FreeCodeCamp-section {
+    width: 100%;
+}
+
+.FreeCodeCamp-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.FreeCodeCamp-column {
+    padding: 8px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox to arrange children */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(58, 53, 53);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    width: 32%;
+    margin-bottom: 2%;
+}
+
+iframe {
+    width: 95%;
+    height: 50vh;
+    margin-bottom: 2%;
+    border: 4px solid transparent; /* Transparent border */
+    transition: border-color 0.3s ease; /* Smooth transition for border-color property */
+}
+
+.FreeCodeCamp-column:hover iframe {
+    border-color: rgb(178, 147, 192);
+    /* Light border color on hover */
+}
+
+@media (max-width: 800px) {
+    .FreeCodeCamp-column {
+        width: 48%;
+        /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 700px) {
+    .Visual-row {
+        grid-template-columns: 1fr;
+        /* Change to one column on smaller screens */
+    }
+
+    .FreeCodeCamp-column {
+        width: 100%;
+    }
+
+    .FreeCodeCamp-column:last-child {
+        margin-bottom: 8%;
+    }
+
+    iframe {
+        height: auto;
+    }
+}
+
+/*Teamwork styling*/
+#Team-Section {
+    width: 90vw;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5e5555;
+    border: 4px solid #715e8a;
+    border-radius: 10px;
+    text-align: justify;
+    padding-bottom: 1%;
+    align-items: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.Video-column,
+.Content-column {
+    float: left;
+    padding: 5px;
+}
+
+.Content-column {
+    width: 50%;
+}
+
+.Video-column {
+    width: 50%;
+    align-items: center;
+}
+
+.WIL-Video {
+    width: 95%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .Video-column,
+    .Content-column {
+        flex: 100%;  /* Each column takes up 100% of the width */
+        max-width: 100%; /* Ensures columns do not exceed 100% width */
+    }
+
+    #Team-Section {
+        width: 90vw;
+        padding: 1%;
+    }
+}
+
+/*Get in touch styling*/
+#hire-section {
+    justify-content: center;
+    text-align: center;
+    background-color: #5e5555;
+    border-top: 2px solid #715e8a;
+    border-bottom: 2px solid #715e8a;
+    width: 100vw;
+    margin-bottom: 2%;
+}
+
+.Social-Links {
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 5px;
+    font-size: 1.1vw;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.Social-Links:hover {
+    background-color: #8775a3;
+}
+
+.Social-Links i {
+    background-color: #9052e0;
+}
+
+/*Back to top button*/
+#top {
+    position: sticky;
+    bottom: 20px;
+    margin-top: 150vh;
+    margin-left: 92%;
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000000;
+    border-radius: 100px;
+    font-size: 0.9vw;
+}
+
+#top:hover {
+    cursor: pointer;
+    background-color: #5e5555;
+    border: 3px solid #715e8a;
+}
+
+/*Scrollbar color change*/
+/* width */
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #715e8a;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #552f5f;
 }

@@ -1,0 +1,624 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+  }
+  
+  /*Sidebar styling*/
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #e6e6e6;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #c3c4e2;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+  }
+   
+  .myPicture {
+    background-image: url(Images/Logo\ Image.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 1%;
+    left: 0;
+    height: 25vh;
+    width: 100%;
+}
+
+button{
+    background-color: #c3c4e2;
+    margin-left: 4%;
+    font-weight: 600;
+    font-size: 16px;
+    width: 170px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a, button {
+      float: left;
+    }
+    div.content {
+      margin-left: 0;
+    }
+
+    button{
+      width: 80px;
+    }
+
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+
+    button{
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.info-Me{
+  box-shadow: 6px 10px 28px 6px rgba(32, 32, 32, 0.4);
+  width: 30%;
+  padding: 15px;
+  margin-left: 3%;
+  margin-bottom: 2%;
+}
+
+.Social-Links{
+  font-size: 1.2vw;
+}
+
+/*Header and p styling*/
+h1, h2 {
+    font-family: 'Cormorant Infant', 'serif';
+    margin-top: 2rem;
+    font-size: 5vw;
+    letter-spacing: 8px;
+    margin-bottom: 2%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin: 1%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  letter-spacing: 4px;
+  border-bottom: 2px solid #999;
+}
+
+h3{
+  font-family: 'Cormorant', 'serif';
+  padding:8px;
+  margin: 1%;
+  margin-bottom: 8px;
+  text-align: justify;
+  font-size: 1.8vw;
+  line-height: 3.5vh;
+  background-color: #dcdcef;
+}
+
+span {
+    font-weight: 700;
+    color: #000;
+  }
+
+  /*About me p elements*/
+.info-P{
+    color: #5f5c5c;
+    font-size: 0.9vw;
+    letter-spacing: 1px;
+    padding-bottom: 1%;
+    font-weight: 500;
+  }
+
+  p{
+    margin-top: 6px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 6px;
+    padding: 2px;
+    text-align: justify;
+    font-size: 0.9vw;
+    line-height: 1.35;
+    letter-spacing: 1px;
+  }
+
+/*Sections header p element*/
+.head-P, .tech-P {
+  font-size: 1.3vw;
+  margin-bottom: 2px;
+  margin-left: 1%;
+}
+
+.tech-P{
+  width: 12vw;
+  margin-bottom: 4px;
+  border-bottom: 2px solid #40408c;
+}
+
+.certificate-P{
+  padding-bottom: 4px;
+  margin-bottom: 0%;
+  font-size: 1vw;
+  margin-left: 1%;
+}
+
+ul {
+  margin-left: 4%;
+  padding: 0%;
+  font-size: 0.9vw;
+  letter-spacing: 1px;
+}
+
+li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+a{
+  color: #8788c5;
+  text-decoration: none;
+  margin-left: 2%;
+  font-size: 0.9vw;
+  margin-left: 1%;
+  padding-left: 2px;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+/*Technical Skills - Image sizes*/
+.line1, .line2, .line3 {
+  display: flex;
+  justify-content: space-around; /* Optional: Adjust spacing between items */
+}
+
+.line1 {
+  width: 82vw;
+  margin-left: 2%;
+  box-shadow: 5px 10px 18px  #a3a3c2;
+}
+
+.line2 {
+  width: 30vw;
+}
+
+.line3 {
+  width: 85vw;
+}
+
+.img, .label-Img{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6vw;
+  height: 8vh;
+  margin-bottom: 5px;
+  margin-left: 1%;
+  padding: 0%;
+}
+
+.label-Img{
+  width: 2vw;
+  height: 4vh;
+}
+
+.skill-box{
+  margin-bottom: 1%;
+  margin-left: 2%;
+  padding-bottom: 1%;
+}
+
+/*Scrollbar color change*/
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #aaa8a8; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cccce5; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #8789c5;
+}
+
+/*Image change*/
+.Python{
+    background-image: url('Images/Python-Logo-BW.png');
+    width:10%;
+}
+
+.Python:hover{
+    background-image: url('Images/Python-Logo-color.png');
+}
+
+.SQL{
+  background-image: url('Images/SQL-Logo-BW.png');
+}
+
+.SQL:hover{
+  background-image: url('Images/SQL-Logo-Color.png');
+}
+
+.Java{
+  background-image: url('Images/Java-Logo-BW.png');
+}
+
+.Java:hover{
+  background-image: url('Images/Java-Logo-color.png');
+}
+
+.C{
+  background-image: url('Images/C-logo-BW.png');
+}
+
+.C:hover{
+  background-image: url('Images/C-logo-Color.png');
+}
+
+.PyCharm-logo{
+  background-image: url('Images/PyCharm-Logo-BW.png');
+}
+
+.PyCharm-logo:hover{
+  background-image: url('Images/PyCharm-Logo-Color.png');
+}
+
+.SSMS-logo{
+  background-image: url('Images/SSMS-Logo-BW.png');
+  width: 12vw;
+  height: 10vh;
+}
+
+.SSMS-logo:hover{
+  background-image: url('Images/SSMS-Logo-Color.png');
+}
+
+.SQL-Lite-logo{
+  background-image: url('Images/SQL-Lite-logo-BW.png');
+}
+
+.SQL-Lite-logo:hover{
+  background-image: url('Images/SQL-Lite-logo-Color.png');
+}
+
+.Oracle-logo{
+  background-image: url('Images/Oracle-Logo-BW.png');
+}
+
+.Oracle-logo:hover{
+  background-image: url('Images/Oracle-Logo-Color.png');
+}
+
+.NetBeans-logo{
+  background-image: url('Images/NetBeans-Logo-BW.png');
+  width: 14vw;
+  height: 10vh;
+}
+
+.NetBeans-logo:hover{
+  background-image: url('Images/NetBeans-Logo-Color.png');
+}
+
+.VS-logo{
+  background-image: url('Images/VS-Mix-Logo-BW.png');
+  width: 10vw;
+  height: 9vh;
+}
+
+.VS-logo:hover{
+  background-image: url('Images/VS-Mix-Logo-Color.png');
+}
+
+.VS-purple-logo{
+  background-image: url('Images/VS-Logo-BW.png');
+}
+
+.VS-purple-logo:hover{
+  background-image: url('Images/VS-Purple-Logo-Color.png');
+}
+
+.Azure-logo{
+  background-image: url('Images/Azure-Logo-BW.png');
+  width:12%;
+}
+
+.Azure-logo:hover{
+  background-image: url('Images/Azure-Logo-Color.png');
+}
+
+.Teams-logo{
+  background-image: url('Images/Teams-Logo-BW.png');
+  width:20%;
+}
+
+.Teams-logo:hover{
+  background-image: url('Images/Teams-Logo-Color.png');
+}
+
+.GitHub-logo{
+  background-image: url('Images/GitHub-Logo-BW.png');
+}
+
+.GitHub-logo:hover{
+  background-image: url('Images/GitHub-Logo-Color.png');
+}
+
+.Office-logo{
+  background-image: url('Images/microsoft-office-365-BW.png');
+  width:22%;
+}
+
+.Office-logo:hover{
+  background-image: url('Images/microsoft-office-365-Color.png');
+}
+
+/*Smaller screen, images are in color*/
+@media (max-width: 800px) {
+  .Python{
+    background-image: url('Images/Python-Logo-color.png'); 
+  }
+
+  .SQL{
+    background-image: url('Images/SQL-Logo-Color.png');
+  }
+
+  .Java{
+    background-image: url('Images/Java-Logo-color.png');
+  }
+
+  .C{
+    background-image: url('Images/C-logo-Color.png');
+  }
+
+  .PyCharm-logo{
+    background-image: url('Images/PyCharm-Logo-Color.png');
+  }
+  
+  .SSMS-logo{
+    background-image: url('Images/SSMS-Logo-Color.png');
+  }
+
+  .SQL-Lite-logo{
+    background-image: url('Images/SQL-Lite-logo-Color.png');
+  }
+  
+  .Oracle-logo{
+    background-image: url('Images/Oracle-Logo-Color.png');
+  }
+
+  .NetBeans-logo{
+    background-image: url('Images/NetBeans-Logo-Color.png');
+  }
+
+  .VS-logo{
+    background-image: url('Images/VS-Mix-Logo-Color.png');
+  }
+ 
+  .VS-purple-logo{
+    background-image: url('Images/VS-Purple-Logo-Color.png');
+  }
+
+  .Azure-logo{
+    background-image: url('Images/Azure-Logo-Color.png');
+  }
+
+  .Teams-logo{
+    background-image: url('Images/Teams-Logo-Color.png');
+  }
+  
+  .GitHub-logo{
+    background-image: url('Images/GitHub-Logo-Color.png');
+  }
+
+  .Office-logo{
+    background-image: url('Images/microsoft-office-365-Color.png');
+  }
+
+}
+
+
+/* Timeline Styles */
+/*Everything is in this section*/
+.timeline {
+  position: relative;
+  max-width: 86%;
+  margin: 0 auto;
+  background-color: #cecee4;
+  margin-bottom: 5%;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: whitesmoke;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 5px 12px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #7b7bb7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*Date header*/
+.date-H2{
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 0%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  letter-spacing: 2px;
+}
+
+/*List layout*/
+.timeLine-list{
+  font-size: 0.8vw;
+  padding-bottom: 4px;
+  text-align: justify;
+  line-height: 1.45;
+}
+
+/*List p elements*/
+.timeLineP{
+  margin:0%;
+  margin-left: 6px;
+  line-height: 1.55;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 18px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 18px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 14px;
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 7px 12px 20px  #7b7b91;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
