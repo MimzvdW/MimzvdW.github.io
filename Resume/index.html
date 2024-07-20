@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,14 +23,14 @@
         <a href="#education">Education</a>
         <a href="#certifications">Certifications</a>
         <a href="#techSkills">Technical Skills</a>
-        <a href="#experience" style="margin-bottom:8px;">Experience</a>
+        <a href="#experience" style="margin-bottom:8px">Experience</a>
         <button><a href="./Michelle van der Westhuizen CV.pdf" target="_blank">Download CV</a></button>
     </div>
 
     <!--All the information-->
     <div class="content">
         <!-- Home -->
-         <section id="home">
+        <section id="home">
             <div>
                 <h1>Michelle van der Westhuizen</h1>
                 <div class="info-Me">
@@ -44,17 +45,19 @@
                     <a class="Social-Links" href="https://github.com/MimzvdW" target="_blank"><i
                             class="fab fa-github"></i></a>
                 </div>
-    
+
                 <h3>Summary</h3>
                 <p>Motivated and detail-oriented software development enthusiast with a solid foundation in systems
                     development and programming.
                     Successfully led a team in developing a web application during a Work Integrated Learning project,
                     demonstrating strong collaboration and deadline management skills.
-                    Passionate about continuous learning and problem-solving, I am looking for a tech industry role where I
-                    can leverage my expertise in programming languages and cloud technologies to contribute to cutting-edge
+                    Passionate about continuous learning and problem-solving, I am looking for a tech industry role
+                    where I
+                    can leverage my expertise in programming languages and cloud technologies to contribute to
+                    cutting-edge
                     projects.
                 </p>
-    
+
                 <h3>Personal Qualities</h3>
                 <ul>
                     <li>Takes ownership of tasks and follows through with commitments.</li>
@@ -71,24 +74,26 @@
                     <li>Manages time and tasks efficiently, maintaining a structured approach.</li>
                     <li>Takes initiative to improve processes and drive progress.</li>
                 </ul>
-    
+
                 <h3>Career Objective</h3>
-                <p>Ambitious software development student seeking an opportunity to utilize my strong foundation in systems
+                <p>Ambitious software development student seeking an opportunity to utilize my strong foundation in
+                    systems
                     development and programming within a dynamic and innovative company.
                     Committed to continuous learning and professional growth, I aim to contribute effectively to solving
                     complex problems.
                     My goal is to develop my technical skills and deliver impactful solutions that drive organizational
                     success.</p>
             </div>
-         </section>
-        
+        </section>
+
         <!--Education-->
         <section id="education">
             <h2>Education</h2>
             <h3>Richfield Institute of Technology - Starting August 2024</h3>
-            <p class="head-P" style="padding-bottom: 1%;"><span>Degree:</span>Bachelor of Science in Information
+            <p class="head-P" style="padding-bottom: 8px;"><span>Degree:</span>Bachelor of Science in Information
                 Technology (BSc IT)</p>
-            <a href="https://www.richfield.ac.za/course/bachelor-of-science-in-information-technology-bsc-it/" target="_blank"> View
+            <a href="https://www.richfield.ac.za/course/bachelor-of-science-in-information-technology-bsc-it/"
+                target="_blank"> View
                 more information</a>
 
             <h3>CTU Training Solutions</h3>
@@ -96,7 +101,8 @@
             <p class="certificate-P"><span>Completion year: </span> 2024</p>
             <a href="Certificates/Letter of result_NQF5 - Software developement.pdf" target="_blank">View results</a>
 
-            <p class="head-P" style="margin-top: 2%;"><span>Certification:</span> NQF Level 4 in Systems Development</p>
+            <p class="head-P" style="margin-top: 8px;"><span>Certification:</span> NQF Level 4 in Systems Development
+            </p>
             <p class="certificate-P"><span>Completion year: </span> 2023</p>
             <a href="Certificates/Letterresults_NQF4 - Programming Foundation.pdf" target="_blank">View Certificate</a>
         </section>
@@ -129,7 +135,7 @@
                 <div class="img C"></div>
             </div>
             <!--Python-->
-            <div class="skill-box" style="padding-top: 2%;">
+            <div class="skill-box" style="padding-top: 8px;">
                 <p class="head-P ">Python <span> 1 years</span>
                 <div class="img PyCharm-logo"></div>
             </div>
@@ -169,7 +175,7 @@
             </div>
 
             <h3>Tools and Technologies</h3>
-            <div class="line3" style="padding-top: 15px; padding-bottom: 30px;">
+            <div class="line3">
                 <div class="img SSMS-logo"></div>
                 <div class="img SQL-Lite-logo"></div>
                 <div class="img Oracle-logo"></div>
@@ -264,40 +270,40 @@
             </div>
         </section>
     </div>
- </div>
+    </div>
 </body>
 
 <!--JavaScript to update the active class based on scrolling or clicking-->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll("Section[id]");
-    const navLinks = document.querySelectorAll(".sidebar a");
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("Section[id]");
+        const navLinks = document.querySelectorAll(".sidebar a");
 
-    window.addEventListener("scroll", () => {
-        let current = "";
+        window.addEventListener("scroll", () => {
+            let current = "";
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 150) { // Adjust the offset as needed
-                current = section.getAttribute("id");
-            }
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) { // Adjust the offset as needed
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${current}`) {
+                    link.classList.add("active");
+                }
+            });
         });
 
         navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === `#${current}`) {
-                link.classList.add("active");
-            }
+            link.addEventListener("click", function () {
+                navLinks.forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+            });
         });
     });
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            navLinks.forEach(nav => nav.classList.remove("active"));
-            this.classList.add("active");
-        });
-    });
-});
-
 </script>
+
 </html>
