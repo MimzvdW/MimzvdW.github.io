@@ -215,7 +215,7 @@ p a {
     }
     
     h2 {
-        font-size: 26px;
+        font-size: 20px;
     }
     
     h3 {
@@ -349,7 +349,7 @@ p a {
     }
     
     #btn{
-        margin-left: 40%;
+        margin-left: 38%;
         font-size: 10px;
     }
 }
@@ -514,7 +514,7 @@ p a {
 
     .code-btn {
         font-size: 10px;
-        width: 28%;
+        width: 35%;
     }
 }
 
@@ -703,6 +703,15 @@ iframe {
     margin-bottom: 2%;
 }
 
+#hireH2{
+    font-family: 'Calisto-MT', serif; 
+    font-size: 2.9vw; 
+    font-style:normal ;
+    font-weight: 500; 
+    letter-spacing: 
+    1px; margin: 0%;
+}
+
 .Social-Links {
     display: inline-block;
     padding: 8px 18px;
@@ -754,9 +763,15 @@ iframe {
         margin-top: 4%;
     }
 
+    #hireH2{
+        font-size: 22px;
+    }
+
     #top{
         margin-left: 88%;
+        font-size: 10px;
     }
+
 }
 
 /*Scrollbar color change*/
