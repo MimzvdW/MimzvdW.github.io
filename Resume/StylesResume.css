@@ -57,12 +57,12 @@ button{
     width: 170px;
   }
 
-  @media screen and (max-width: 800px) {
-    .sidebar a {
-      padding: 10px;
-    }
-  }
-  
+  .content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
   @media screen and (max-width: 400px) {
     .sidebar a {
       text-align: center;
@@ -74,13 +74,14 @@ button{
       text-align: center;
     }
   }
-  
-.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-}
 
+  @media screen and (max-width: 800px) {
+    .sidebar a {
+      padding: 8px;
+    }
+  }
+  
+  
 @media screen and (max-width: 1000px) {
   .sidebar {
     width: 100%;
@@ -108,14 +109,19 @@ button{
   margin-bottom: 2%;
 }
 
-@media screen and (max-width: 700px) {
-  .info-Me{
-    width: 50%;
-  }
-}
-
 .Social-Links{
   font-size: 1.2vw;
+}
+
+@media screen and (max-width: 800px) {
+  .info-Me{
+    width: 70%;
+  }
+
+  .Social-Links{
+    font-size: 16px;
+  }
+
 }
 
 /*Header and p styling*/
@@ -219,38 +225,43 @@ a:hover{
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   a{
-    font-size: 10px;
+    font-size: 8px;
   }
 
   p{
+    font-size: 12px;
+  }
+  
+  .info-P{
     font-size: 14px;
   }
 
-  h1, h2 {
+  .head-P{
+    font-size: 14px;
+  }
+  
+  .certificate-P{
+    font-size: 10px;
+    padding-bottom: 0%;
+  }
+
+  h1 {
     font-size: 34px;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h3{
-    font-size: 14px;
+    font-size: 18px;
     padding: 4px;
   }
 
-  p{
-    font-size: 14px;
-  }
-
-  .certificate-P{
-    padding-bottom: 0%;
-  }
-
   ul{
-      font-size: 14px;
+      font-size: 12px;
   }
 }
 
@@ -463,77 +474,77 @@ a:hover{
 @media (max-width: 800px) {
   .Python{
     background-image: url('Images/Python-Logo-color.png'); 
-    height: 40px;
+    height: 26px;
   }
 
   .SQL{
     background-image: url('Images/SQL-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .Java{
     background-image: url('Images/Java-Logo-color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .C{
     background-image: url('Images/C-logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .PyCharm-logo{
     background-image: url('Images/PyCharm-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
   
   .SSMS-logo{
     background-image: url('Images/SSMS-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .SQL-Lite-logo{
     background-image: url('Images/SQL-Lite-logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
   
   .Oracle-logo{
     background-image: url('Images/Oracle-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .NetBeans-logo{
     background-image: url('Images/NetBeans-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .VS-logo{
     background-image: url('Images/VS-Mix-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
  
   .VS-purple-logo{
     background-image: url('Images/VS-Purple-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .Azure-logo{
     background-image: url('Images/Azure-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .Teams-logo{
     background-image: url('Images/Teams-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
   
   .GitHub-logo{
     background-image: url('Images/GitHub-Logo-Color.png');
-    height: 40px;
+    height: 26px;
   }
 
   .Office-logo{
     background-image: url('Images/microsoft-office-365-Color.png');
-    height: 40px;
+    height: 26px;
   }
 }
 
