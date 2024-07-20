@@ -248,7 +248,7 @@ p a {
     }
     
     h3 {
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 1%;
     }
     
@@ -372,6 +372,21 @@ p a {
     }
 }
 
+@media (max-width: 400px){
+    #nameHeader{
+        font-size: 18px;
+    }
+
+    #devText {
+        font-size: 14px;
+    }
+    
+    #btn{
+        margin-left: 38%;
+        font-size: 11px;
+    }
+}
+
 /*Code projects*/
 .Code-Project-section {
     width: 100%;
@@ -385,7 +400,6 @@ p a {
 
 .code-column {
     width: 25%;
-    text-align: justify;
     padding: 4px;
     box-sizing: border-box;
     display: flex; /* Use flexbox to arrange children */
@@ -403,6 +417,7 @@ p a {
     margin-bottom: 1.3rem;
     line-height: 1.44;
     font-weight: 300;
+    text-align: justify;
 }
 
 .code-btn {
@@ -531,11 +546,13 @@ p a {
     }
 
     .column-P{
-        font-size: 14px;
+        font-size: 12px;
+        word-spacing: -0.5px; /* Adjust this value to reduce the space between words */
+        hyphens: auto;
     }
 
     .code-btn {
-        font-size: 10px;
+        font-size: 9px;
         width: 35%;
     }
 }
