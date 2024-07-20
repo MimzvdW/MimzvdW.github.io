@@ -56,25 +56,6 @@ button{
     font-size: 16px;
     width: 170px;
   }
-
-  @media screen and (max-width: 1000px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a, button {
-      float: left;
-    }
-    div.content {
-      margin-left: 0;
-    }
-
-    button{
-      width: 80px;
-    }
-
-  }
   
   @media screen and (max-width: 400px) {
     .sidebar a {
@@ -88,10 +69,30 @@ button{
     }
   }
   
-div.content {
+.content {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a, button {
+    float: left;
+  }
+.content {
+    margin-left: 0%;
+
+  }
+
+  button{
+    width: 80px;
+  }
+
 }
 
 .info-Me{
@@ -102,10 +103,15 @@ div.content {
   margin-bottom: 2%;
 }
 
+@media screen and (max-width: 700px) {
+  .info-Me{
+    width: 50%;
+  }
+}
+
 .Social-Links{
   font-size: 1.2vw;
 }
-
 /*Header and p styling*/
 h1, h2 {
     font-family: 'Cormorant Infant', 'serif';
