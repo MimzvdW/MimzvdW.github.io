@@ -191,14 +191,56 @@ p,
     text-align: center;
 }
 
-.code {
-    font-family: Georgia, serif;
-    font-size: 1.3vw;
-    margin: 16px;
-}
-
 p a {
     color: #c88adf;
+}
+
+/*Media query for the above*/
+
+@media (max-width: 600px){
+    .Project-dropdown {
+        width: 100px;
+    }
+
+    #navbar a, .dropbtn {
+       font-size: 12px;
+    }
+
+    #welcome-message {
+        margin-top: 22vh;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        margin-bottom: 1%;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+        
+    .top-P {
+        font-size: 18px;
+    }
+
+    p
+    {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    a{
+        font-size: 9px;
+    }
+
 }
 
 /*Sabout me section styling*/
@@ -300,6 +342,15 @@ p a {
 
     .img-About {
         padding-top: 5px;
+    }
+
+    #devText {
+        font-size: 1.9vw;
+    }
+    
+    #btn{
+        margin-left: 5%;
+        font-size: 1.5vw;
     }
 }
 
@@ -460,13 +511,17 @@ p a {
     .C-logo {
         background-image: url('Images/C-logo-Color.png');
     }
+
+    .code-btn {
+        font-size: 10px;
+        width: 28%;
+    }
 }
 
 /*Visual projects styling*/
 .Visual-Projects-section {
     width: 100%;
 }
-
 
 .Visual-row {
     display: grid;
@@ -557,6 +612,14 @@ iframe {
     .FreeCodeCamp-column {
         width: 48%;
         /* Two columns on medium screens */
+    }
+
+    .visual-column:last-child {
+        margin-bottom: 25%;
+    }
+
+    .Visual-P{
+        font-size: 14px;
     }
 }
 
@@ -680,6 +743,20 @@ iframe {
     cursor: pointer;
     background-color: #5e5555;
     border: 3px solid #715e8a;
+}
+
+@media (max-width: 700px){
+    .Social-Links {
+        font-size: 13px;
+    }
+
+    #hire-section{
+        margin-top: 4%;
+    }
+
+    #top{
+        margin-left: 88%;
+    }
 }
 
 /*Scrollbar color change*/
