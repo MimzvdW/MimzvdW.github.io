@@ -144,7 +144,6 @@ h2 {
     font-size: 3.8vw;
     letter-spacing: 2px;
     line-height: 1.3;
-    margin-bottom: 1%;
 }
 
 h3 {
@@ -191,17 +190,78 @@ p,
     text-align: center;
 }
 
-.code {
-    font-family: Georgia, serif;
-    font-size: 1.3vw;
-    margin: 16px;
-}
-
 p a {
     color: #c88adf;
 }
 
-/*Sabout me section styling*/
+/*Media query for the above*/
+
+@media (max-width: 600px){
+    .Project-dropdown {
+        width: 100px;
+    }
+
+    #navbar a, .dropbtn {
+       font-size: 12px;
+    }
+
+    #welcome-message {
+        margin-top: 22vh;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 14px;
+        margin-bottom: 1%;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+        
+    .top-P {
+        font-size: 17px;
+    }
+
+    p
+    {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px){
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 10px;
+        margin-bottom: 1%;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
+        
+    .top-P {
+        font-size: 15px;
+    }
+}
+
+/*About me section styling*/
 #About-info {
     width: 90vw;
     height: auto;
@@ -301,6 +361,30 @@ p a {
     .img-About {
         padding-top: 5px;
     }
+
+    #devText {
+        font-size: 16px;
+    }
+    
+    #btn{
+        margin-left: 38%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    #nameHeader{
+        font-size: 18px;
+    }
+
+    #devText {
+        font-size: 14px;
+    }
+    
+    #btn{
+        margin-left: 38%;
+        font-size: 11px;
+    }
 }
 
 /*Code projects*/
@@ -316,7 +400,6 @@ p a {
 
 .code-column {
     width: 25%;
-    text-align: justify;
     padding: 4px;
     box-sizing: border-box;
     display: flex; /* Use flexbox to arrange children */
@@ -334,6 +417,7 @@ p a {
     margin-bottom: 1.3rem;
     line-height: 1.44;
     font-weight: 300;
+    text-align: justify;
 }
 
 .code-btn {
@@ -460,13 +544,23 @@ p a {
     .C-logo {
         background-image: url('Images/C-logo-Color.png');
     }
+
+    .column-P{
+        font-size: 12px;
+        word-spacing: -0.5px; /* Adjust this value to reduce the space between words */
+        hyphens: auto;
+    }
+
+    .code-btn {
+        font-size: 9px;
+        width: 35%;
+    }
 }
 
 /*Visual projects styling*/
 .Visual-Projects-section {
     width: 100%;
 }
-
 
 .Visual-row {
     display: grid;
@@ -558,6 +652,14 @@ iframe {
         width: 48%;
         /* Two columns on medium screens */
     }
+
+    .visual-column:last-child {
+        margin-bottom: 25%;
+    }
+
+    .Visual-P{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -640,6 +742,16 @@ iframe {
     margin-bottom: 2%;
 }
 
+.hireH2{
+    font-family: 'Calisto-MT', serif; 
+    font-size: 2.9vw; 
+    font-style:normal ;
+    font-weight: 500; 
+    letter-spacing: 1px; 
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 .Social-Links {
     display: inline-block;
     padding: 8px 18px;
@@ -680,6 +792,26 @@ iframe {
     cursor: pointer;
     background-color: #5e5555;
     border: 3px solid #715e8a;
+}
+
+@media (max-width: 700px){
+    .Social-Links {
+        font-size: 13px;
+    }
+
+    #hire-section{
+        margin-top: 4%;
+    }
+
+    .hireH2{
+        font-size: 22px;
+    }
+
+    #top{
+        margin-left: 80%;
+        font-size: 10px;
+    }
+
 }
 
 /*Scrollbar color change*/
